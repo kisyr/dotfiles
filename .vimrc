@@ -1,21 +1,19 @@
-execute pathogen#infect()
-set laststatus=2
-let g:lightline = { 'colorscheme': 'wombat' }
+" Force utf-8
+set fileencodings=ucs-bom,utf-8,latin1
+set encoding=utf-8
 
-
+" Visual
 syntax on
 set background=dark
 set t_Co=256
 colorscheme monokai
-
-
 set number
 set wrap
 set listchars=trail:·,eol:¬,tab:▸\  
 set list
 set tags=.tags;/
 
-
+" Netrw
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 "let g:netrw_browse_split = 4
@@ -25,7 +23,6 @@ augroup ProjectDrawer
 "  autocmd!
 "  autocmd VimEnter * :Vexplore
 augroup END
-
 
 " allow toggling between local and default mode
 function! TabToggle()
